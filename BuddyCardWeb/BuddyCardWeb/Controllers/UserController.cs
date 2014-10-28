@@ -6,27 +6,27 @@ using System.Web.Mvc;
 
 namespace BuddyCardWeb.Controllers
 {
-    public class BankAccountController : Controller
+    public class UserController : Controller
     {
-        // GET: BankAccount
+        // GET: User
         public ActionResult Index()
         {
             return View();
         }
 
-        // GET: BankAccount/Details/5
+        // GET: User/Details/5
         public ActionResult Details(int id)
         {
             return View();
         }
 
-        // GET: BankAccount/Create
+        // GET: User/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: BankAccount/Create
+        // POST: User/Create
         [HttpPost]
         public ActionResult Create(FormCollection collection)
         {
@@ -42,13 +42,13 @@ namespace BuddyCardWeb.Controllers
             }
         }
 
-        // GET: BankAccount/Edit/5
+        // GET: User/Edit/5
         public ActionResult Edit(int id)
         {
             return View();
         }
 
-        // POST: BankAccount/Edit/5
+        // POST: User/Edit/5
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
         {
@@ -64,13 +64,13 @@ namespace BuddyCardWeb.Controllers
             }
         }
 
-        // GET: BankAccount/Delete/5
+        // GET: User/Delete/5
         public ActionResult Delete(int id)
         {
             return View();
         }
 
-        // POST: BankAccount/Delete/5
+        // POST: User/Delete/5
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
         {

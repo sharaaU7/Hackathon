@@ -39,5 +39,8 @@ namespace BuddyCardWeb.Models
 
         [StringLength(50)]
         public string PaypalId { get; set; }
+
+        [StringLength(50)]
+        public string UserId { get; set; }
     }
 }
