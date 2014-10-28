@@ -74,3 +74,51 @@
    Debug ID: 39ca379416ce3
    Details:  number -> Value is invalid
 
+2014-10-27 20:54:14,604 [6] DEBUG PayPal.HttpConnection [(null)] grant_type=client_credentials
+2014-10-27 20:54:16,042 [6] DEBUG PayPal.HttpConnection [(null)] Service response
+2014-10-27 20:54:16,042 [6] DEBUG PayPal.HttpConnection [(null)] {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015uGU7DEYpKr5jncekQeTeomyRUCC1YtOrh0osjh2fLcc","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+2014-10-27 20:54:16,979 [6] DEBUG PayPal.PayPalResource [(null)] Content-Type:application/json
+2014-10-27 20:54:16,979 [6] DEBUG PayPal.PayPalResource [(null)] User-Agent:PayPalSDK/rest-sdk-dotnet 0.10.0 (core=1.5.1;lang=DOTNET;v=4.5;clr=4.0.30319.34014;bit=64;os=Microsoft Windows NT 6.2.9200.0)
+2014-10-27 20:54:16,979 [6] DEBUG PayPal.PayPalResource [(null)] Authorization:Bearer A015uGU7DEYpKr5jncekQeTeomyRUCC1YtOrh0osjh2fLcc
+2014-10-27 20:54:16,979 [6] DEBUG PayPal.PayPalResource [(null)] PayPal-Request-Id:1589af97-67c0-4a57-b1e9-3196989fd9e4
+2014-10-27 20:54:16,979 [6] DEBUG PayPal.HttpConnection [(null)] {"number":"4417119669820331","type":"bhosale","expire_month":11,"expire_year":2018,"cvv2":0}
+2014-10-27 20:54:17,292 [6] ERROR PayPal.HttpConnection [(null)] Error response:
+2014-10-27 20:54:17,292 [6] ERROR PayPal.HttpConnection [(null)] {"name":"VALIDATION_ERROR","details":[{"field":"type","issue":"Value is invalid (must be visa, mastercard, amex, discover, or maestro)"}],"message":"Invalid request - see details","information_link":"https://developer.paypal.com/docs/api/#VALIDATION_ERROR","debug_id":"5c9011ddaf185"}
+2014-10-27 20:54:17,292 [6] ERROR PayPal.HttpConnection [(null)] The remote server returned an error: (400) Bad Request.
+2014-10-27 20:54:17,401 [6] ERROR PayPal.Exception.PayPalException [(null)] Payments Exception: 
+   Error:    VALIDATION_ERROR
+   Message:  Invalid request - see details
+   URI:      https://developer.paypal.com/docs/api/#VALIDATION_ERROR
+   Debug ID: 5c9011ddaf185
+   Details:  type -> Value is invalid (must be visa, mastercard, amex, discover, or maestro)
+
+2014-10-27 20:55:40,373 [6] DEBUG PayPal.HttpConnection [(null)] grant_type=client_credentials
+2014-10-27 20:55:41,138 [6] DEBUG PayPal.HttpConnection [(null)] Service response
+2014-10-27 20:55:41,138 [6] DEBUG PayPal.HttpConnection [(null)] {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015BrkELHkIr6i-oLFBpRX-rdBiBBZGXQiZj1dz6Ph7QFg","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+2014-10-27 20:55:42,091 [6] DEBUG PayPal.PayPalResource [(null)] Content-Type:application/json
+2014-10-27 20:55:42,091 [6] DEBUG PayPal.PayPalResource [(null)] User-Agent:PayPalSDK/rest-sdk-dotnet 0.10.0 (core=1.5.1;lang=DOTNET;v=4.5;clr=4.0.30319.34014;bit=64;os=Microsoft Windows NT 6.2.9200.0)
+2014-10-27 20:55:42,091 [6] DEBUG PayPal.PayPalResource [(null)] Authorization:Bearer A015BrkELHkIr6i-oLFBpRX-rdBiBBZGXQiZj1dz6Ph7QFg
+2014-10-27 20:55:42,091 [6] DEBUG PayPal.PayPalResource [(null)] PayPal-Request-Id:e77083da-151b-4f44-93dd-b243984fceea
+2014-10-27 20:55:42,091 [6] DEBUG PayPal.HttpConnection [(null)] {"number":"4417119669820331","type":"visa","expire_month":11,"expire_year":2018,"cvv2":0}
+2014-10-27 20:55:42,388 [6] DEBUG PayPal.HttpConnection [(null)] Service response
+2014-10-27 20:55:42,388 [6] DEBUG PayPal.HttpConnection [(null)] {"id":"CARD-21W27256Y2243501DKRHRHPI","state":"ok","type":"visa","number":"xxxxxxxxxxxx0331","expire_month":"11","expire_year":"2018","valid_until":"2017-10-27T00:00:00Z","create_time":"2014-10-28T03:55:41Z","update_time":"2014-10-28T03:55:41Z","links":[{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-21W27256Y2243501DKRHRHPI","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-21W27256Y2243501DKRHRHPI","rel":"delete","method":"DELETE"},{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-21W27256Y2243501DKRHRHPI","rel":"patch","method":"PATCH"}]}
+2014-10-27 21:02:12,006 [6] DEBUG PayPal.HttpConnection [(null)] grant_type=client_credentials
+2014-10-27 21:02:12,787 [6] DEBUG PayPal.HttpConnection [(null)] Service response
+2014-10-27 21:02:12,803 [6] DEBUG PayPal.HttpConnection [(null)] {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015irodwDx8JJzH0cUpLHeCQWj-OY2tyjn5bv0dvD1lyYI","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+2014-10-27 21:02:13,725 [6] DEBUG PayPal.PayPalResource [(null)] Content-Type:application/json
+2014-10-27 21:02:13,725 [6] DEBUG PayPal.PayPalResource [(null)] User-Agent:PayPalSDK/rest-sdk-dotnet 0.10.0 (core=1.5.1;lang=DOTNET;v=4.5;clr=4.0.30319.34014;bit=64;os=Microsoft Windows NT 6.2.9200.0)
+2014-10-27 21:02:13,740 [6] DEBUG PayPal.PayPalResource [(null)] Authorization:Bearer A015irodwDx8JJzH0cUpLHeCQWj-OY2tyjn5bv0dvD1lyYI
+2014-10-27 21:02:13,740 [6] DEBUG PayPal.PayPalResource [(null)] PayPal-Request-Id:ab453d26-e4ea-4a2d-9c53-85e66ccb16de
+2014-10-27 21:02:13,740 [6] DEBUG PayPal.HttpConnection [(null)] {"number":"4417119669820331","type":"visa","expire_month":11,"expire_year":2018,"cvv2":0}
+2014-10-27 21:02:14,021 [6] DEBUG PayPal.HttpConnection [(null)] Service response
+2014-10-27 21:02:14,037 [6] DEBUG PayPal.HttpConnection [(null)] {"id":"CARD-8X6494448H843343TKRHRKRI","state":"ok","type":"visa","number":"xxxxxxxxxxxx0331","expire_month":"11","expire_year":"2018","valid_until":"2017-10-27T00:00:00Z","create_time":"2014-10-28T04:02:13Z","update_time":"2014-10-28T04:02:13Z","links":[{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-8X6494448H843343TKRHRKRI","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-8X6494448H843343TKRHRKRI","rel":"delete","method":"DELETE"},{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-8X6494448H843343TKRHRKRI","rel":"patch","method":"PATCH"}]}
+2014-10-27 21:11:38,324 [6] DEBUG PayPal.HttpConnection [(null)] grant_type=client_credentials
+2014-10-27 21:11:39,121 [6] DEBUG PayPal.HttpConnection [(null)] Service response
+2014-10-27 21:11:39,121 [6] DEBUG PayPal.HttpConnection [(null)] {"scope":"https://uri.paypal.com/services/subscriptions https://api.paypal.com/v1/payments/.* https://api.paypal.com/v1/vault/credit-card https://uri.paypal.com/services/applications/webhooks openid https://uri.paypal.com/services/invoicing https://api.paypal.com/v1/vault/credit-card/.*","access_token":"A015dpDA6A5f3S6IypAgr7syAu0l-hBMiWGmuKIsCjYS.xU","token_type":"Bearer","app_id":"APP-80W284485P519543T","expires_in":28800}
+2014-10-27 21:11:40,012 [6] DEBUG PayPal.PayPalResource [(null)] Content-Type:application/json
+2014-10-27 21:11:40,012 [6] DEBUG PayPal.PayPalResource [(null)] User-Agent:PayPalSDK/rest-sdk-dotnet 0.10.0 (core=1.5.1;lang=DOTNET;v=4.5;clr=4.0.30319.34014;bit=64;os=Microsoft Windows NT 6.2.9200.0)
+2014-10-27 21:11:40,012 [6] DEBUG PayPal.PayPalResource [(null)] Authorization:Bearer A015dpDA6A5f3S6IypAgr7syAu0l-hBMiWGmuKIsCjYS.xU
+2014-10-27 21:11:40,012 [6] DEBUG PayPal.PayPalResource [(null)] PayPal-Request-Id:7bb5a3f4-81db-4512-b664-2c6faaa89db1
+2014-10-27 21:11:40,012 [6] DEBUG PayPal.HttpConnection [(null)] {"number":"4417119669820331","type":"visa","expire_month":11,"expire_year":2018,"cvv2":0}
+2014-10-27 21:11:40,340 [6] DEBUG PayPal.HttpConnection [(null)] Service response
+2014-10-27 21:11:40,340 [6] DEBUG PayPal.HttpConnection [(null)] {"id":"CARD-2E920048HB238845PKRHRO6Y","state":"ok","type":"visa","number":"xxxxxxxxxxxx0331","expire_month":"11","expire_year":"2018","valid_until":"2017-10-27T00:00:00Z","create_time":"2014-10-28T04:11:39Z","update_time":"2014-10-28T04:11:39Z","links":[{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-2E920048HB238845PKRHRO6Y","rel":"self","method":"GET"},{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-2E920048HB238845PKRHRO6Y","rel":"delete","method":"DELETE"},{"href":"https://api.sandbox.paypal.com/v1/vault/credit-card/CARD-2E920048HB238845PKRHRO6Y","rel":"patch","method":"PATCH"}]}

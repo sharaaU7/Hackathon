@@ -33,5 +33,7 @@ namespace BuddyCardWeb.Models
 		public System.Data.Entity.DbSet<BuddyCardWeb.Models.CreditCard> CreditCards { get; set; }
 
 		public System.Data.Entity.DbSet<BuddyCardWeb.Models.CreditCardList> CreditCardLists { get; set; }
+
+		public System.Data.Entity.DbSet<BuddyCardWeb.Models.BankAccount> BankAccounts { get; set; }
     }
 }
