@@ -1,23 +1,23 @@
 namespace BuddyCardWeb.Models
-{
+	{
 	using System;
 	using System.Data.Entity;
 	using System.ComponentModel.DataAnnotations.Schema;
 	using System.Linq;
 
 	public partial class PaymentModel : DbContext
-	{
-		public PaymentModel()
-			: base("name=PaymentModel")
 		{
-		}
+		public PaymentModel ( )
+			: base("name=PaymentModel")
+			{
+			}
 
 		public virtual DbSet<BankAccount> BankAccounts { get; set; }
 		public virtual DbSet<CreditCard> CreditCards { get; set; }
 		public virtual DbSet<UserData> UserDatas { get; set; }
 
-		protected override void OnModelCreating(DbModelBuilder modelBuilder)
-		{
+		protected override void OnModelCreating ( DbModelBuilder modelBuilder )
+			{
 			modelBuilder.Entity<BankAccount>()
 				.Property(e => e.account_name)
 				.IsUnicode(false);
@@ -153,6 +153,6 @@ namespace BuddyCardWeb.Models
 			modelBuilder.Entity<UserData>()
 				.Property(e => e.Password)
 				.IsUnicode(false);
+			}
 		}
 	}
-}

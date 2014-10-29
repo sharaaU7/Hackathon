@@ -16,5 +16,7 @@ namespace BuddyCardWeb.Models
         [Required]
         [StringLength(20)]
         public string Password { get; set; }
+
+        public int? AccountType { get; set; }
     }
 }
