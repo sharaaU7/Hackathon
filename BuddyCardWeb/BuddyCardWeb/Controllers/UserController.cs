@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using BuddyCardWeb.Models;
 
 namespace BuddyCardWeb.Controllers
 {
@@ -28,23 +27,20 @@ namespace BuddyCardWeb.Controllers
         }
 
         // POST: User/Create
-		[HttpPost]
-		public ActionResult Create(FormCollection collection)
-		{
-			UserData user = new UserData()
-			{
-				UserId = collection["UserId"],
-				Password = collection["Password"]
-			};
+        [HttpPost]
+        public ActionResult Create(FormCollection collection)
+        {
+            try
+            {
+                // TODO: Add insert logic here
 
-			using (var db = new PaymentModel())
-			{
-				db.UserDatas.Add(user);
-				db.SaveChanges();
-			}
-
-			return View(user);
-		}
+                return RedirectToAction("Index");
+            }
+            catch
+            {
+                return View();
+            }
+        }
 
         // GET: User/Edit/5
         public ActionResult Edit(int id)
